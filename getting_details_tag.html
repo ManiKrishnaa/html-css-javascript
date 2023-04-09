@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> getting knowing the tags </title>
+    </head>
+    <body>
+        <a id="a1" href="https:\\srkrec.ac.in" rel="nofollow" target="_self"> HI </a>
+        <br> </bt><button id="btn" onclick="getvalues()"> CLICK ME </button>
+        <br> <label id="place1"> href : </label>
+        <br> <label id="place2"> rel : </label>
+    </body>
+    <script>
+        function getvalues()
+        {
+            var h = document.getElementById("a1").href;
+            document.getElementById("place1").innerHTML += h;
+            var r = document.getElementById("a1").rel;
+            document.getElementById("place2").innerHTML += r;
+        }
+    </script>
+</html>

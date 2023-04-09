@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> table on user data </title>
+    </head>
+    <body>
+        <table id="t" border="1">
+        </table>
+        <form>
+            <input type="button" id="btn" onclick="create_table()" value="create table">
+        </form>
+    </body>
+    <script>
+        function create_table()
+        {
+            rn = window.prompt(" enter no of rows : ");
+            cn = window.prompt(" enter no of columns : ");
+            for(var r=0; r<parseInt(rn,10); r++)
+            {
+                var x = document.getElementById("t").insertRow(r);
+                for(var c=0; c<parseInt(cn,10); c++)
+                {
+                    var y = x.insertCell(c);
+                    y.innerHTML = "row-"+r+" col-"+c;
+                }
+            }
+        }
+    </script>
+</html>

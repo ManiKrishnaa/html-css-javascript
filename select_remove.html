@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> select and remove </title>
+    </head>
+    <body>
+        <select id="s">
+            <option> red </option>
+            <option> green </option>
+            <option> yellow </option>
+            <option> blue </option>
+            <option> white </option>
+        </select>
+        <form>
+            <input type="button" id="btn" value="select and remove " onclick="select_remove()">
+        </form>
+    </body>
+    <script>
+        function select_remove()
+        {
+            var x = document.getElementById("s");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</html>

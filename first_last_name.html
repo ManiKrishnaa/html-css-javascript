@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> getting first name and last name </title>
+    </head>
+    <body>
+        <form id="f1">
+         first name : <input type="text" id="fn"> <br>
+         last name : <input type="text" id="ln"><br>
+         <button id="btn" onclick="getvalue()"> submit </button>
+         <h1 id="one"> </h1>
+         <h1 id="two"> </h1>   
+        </form>
+        <script>
+            getvalue();
+            function getvalue()
+            {
+               var first = document.getElementById("fn").value;
+               var last = document.getElementById("ln").value;
+                document.getElementById("one").innerHTML = first;
+                document.getElementById("two").innerHTML = last;
+            }
+        </script>
+    </body>
+</html>
